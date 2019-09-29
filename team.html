@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Camp Leads</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+     <link rel="stylesheet" href="w3.css">
+   <script type="text/javascript" src="js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<style>
+
+ body {
+		/*font-family: Open Sans;*/
+      font: 400 15px/1.8 Lato, Open Sans;
+      color: #666;
+      padding-top: 43px;
+  }
+ 
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background-color: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background-color:  #55ACEE;
+  color: white;
+}
+
+.fa-github {
+  background: #444444;
+  color: white;
+}
+
+
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;      
+      font-size: 20px;
+      color: #111;
+  }
+  .container {
+      padding: 80px 120px;
+  }
+  
+  .myCarousel{
+    padding-top: 3%
+  }
+  .carousel-inner img {
+      width: 100%;
+      height: 70% ;/
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  .bg-1 {
+      background: #1673ff;
+      color:  #000000;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
+  .modal-header, h4, .close {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: #777;
+  }
+  .navbar {
+     font-family: Open Sans;
+      margin-bottom: 0;
+      background-color:#1673ff;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color:  #ffffff !important;
+  }
+  .navbar-nav li a:hover {
+      color: #000 !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+      background-color: transparent;
+  }
+  .navbar-default .navbar-toggle{
+      border-color: transparent;
+  }
+  h2{
+  	font: 400 25px/1.8 Lato, Open Sans;
+  }
+  
+  
+  
+  footer {
+      background-color:#1673ff;
+      font-family: Open Sans;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+</style>
+<header>
+<div class="container-fluid">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="./index.html#myPage"><b>FSMK WINTERCAMP'18</b></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="./index.html#about"><b>ABOUT</b></a></li>
+        <li><a href="./index.html#tracks"><b>TRACKS</b></a></li>
+        <li><a href="./index.html#venue"><b>VENUE</b></a></li>
+       <li class="dropdown"><a style="background-color: transparent;" class="dropdown-toggle" data-toggle="dropdown" href="#"><b>SCHEDULE</b><span class="caret"></span></a>
+        <ul class="dropdown-menu"  id="nav navbar-nav1">
+          <li style="background-color:#1673ff"><a href="./Docs/schedule.pdf">PDF</a></li>
+          <li style="background-color: #1673ff"><a href="./Docs/schedule.ods">SpreadSheet</a></li>
+        </ul>
+
+        </li>
+        <li><a href="./Docs/coc.pdf"><b>CoC</b></a></li>
+        <li class="active"><a href="#"><b>CAMP LEADS</b></a></li>
+        <li ><a href="./faq.html"><b>FAQs</b></a></li>
+
+        <li><a href="./index.html#contact"><b>CONTACT</b></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+</header>
+<body>
+	<br>
+<div  align="center"><h1>Organisers</h1></div>
+<div class="w3-container" align="center">
+
+  <div class="w3-card-4" style="width:80%">
+    <header class="w3-container w3-light-grey">
+      <h2>Amith Satyanarayan</h2>
+  </header>
+      
+      <div class="col-sm-4">
+     <img src="./images/glue.png" class="w3-left w3-circle w3-margin-right "  style="width:70px;height:70px;" >
+ </div>
+ <div class="col-sm-4"><h2>GLUE</h2></div>
+    
+    <div class="w3-container">
+      <img src="./images/amith.jpg"  class="w3-center w3-circle w3-margin-right" style="width:150px" >
+      <hr>
+      
+      <div  align="center">
+      <p ><span class="glyphicon glyphicon-envelope"></span>amith.s22[at]gmail[dot]com</p>
+     <!-- <p><span class="glyphicon glyphicon-phone"></span>+91 7795871392</p>-->
+  </div>
+    </div>
+  </div>
+</div>
+    
+</div>><br>
+
+<div class="w3-container" align="center">
+  <div class="w3-card-4" style="width:80%">
+    <header class="w3-container w3-light-grey">
+      <h2>Prajwal H C</h2>
+    </header>
+    <div class="col-sm-4">
+     <img src="./images/glue.png" class="w3-left w3-circle w3-margin-right "  style="width:70px;height:70px;" >
+ </div>
+ <div class="col-sm-4"><h2>GLUE</h2></div>
+    <div class="w3-container">
+      <img src="./images/prajwal.jpg" class="w3-center w3-circle w3-margin-right" style="width:150px" >
+      <hr>
+     <div  align="center">
+      <p><span class="glyphicon glyphicon-envelope"></span>prajwalsachin4[at]gmail[dot]com</p>
+    
+    </div>
+</div>
+  </div>
+</div><br>
+<div class="w3-container" align="center">
+
+  <div class="w3-card-4" style="width:80%">
+    <header class="w3-container w3-light-grey">
+      <h2>Chinmayee R</h2>
+    </header>
+    <div class="col-sm-4">
+     <img src="./images/geon.jpg" class="w3-left w3-circle w3-margin-right "  style="width:60px;height:60px;" >
+ </div>
+ <div class="col-sm-4"><h2>GEON</h2></div>
+    <div class="w3-container">
+      <img src="./images/chinmayee.jpg" class="w3-center w3-circle w3-margin-right" style="width:150px" >
+      <hr>
+     <div  align="center">
+      <p><span class="glyphicon glyphicon-envelope">chinmayeer1012[at]gmail[dot]com</p>
+      
+  </div>
+    </div>
+  </div>
+</div><br>
+<div class="w3-container" align="center">
+
+  <div class="w3-card-4" style="width:80%">
+    <header class="w3-container w3-light-grey">
+      <h2>Daniyal Mujahid</h2>
+    </header>
+    <div class="col-sm-4">
+     <img src="./images/geon.jpg" class="w3-left w3-circle w3-margin-right "  style="width:60px;height:60px;" >
+ </div>
+ <div class="col-sm-4"><h2>GEON</h2></div>
+    <div class="w3-container">
+      <img src="./images/daniyal.jpg" alt="Avatar" class="w3-center w3-circle w3-margin-right" style="width:150px;">
+      <hr>
+     <div  align="center">
+      <p><span class="glyphicon glyphicon-envelope"></span>daniyalm[at]gmail[dot]com</p>
+      
+    </div>
+</div>
+  </div>
+</div>
+
+</div><br>
+<div class="w3-container" align="center">
+
+  <div class="w3-card-4" style="width:80%">
+    <header class="w3-container w3-light-grey">
+      <h2>Amina Zahab</h2>
+    </header>
+     <div class="col-sm-4">
+     <img src="./images/rit.png" class="w3-left w3-circle w3-margin-right "  style="width:60px;height:60px;" >
+ </div>
+ <div class="col-sm-4"><h2>TECH-D</h2></div>
+    <div class="w3-container">
+      <img src="./images/amina.jpg" class="w3-center w3-circle w3-margin-right" style="width:150px;">
+      <hr>
+      <div  align="center">
+      <p><span class="glyphicon glyphicon-envelope"></span>zahab.amina[at]gmail[dot]com</p>
+      
+    </div>
+</div>
+  </div>
+</div><br>
+<div class="w3-container" align="center">
+
+  <div class="w3-card-4" style="width:80%">
+    <header class="w3-container w3-light-grey">
+      <h2>Subhashini N</h2>
+    </header>
+     <div class="col-sm-4">
+     <img src="./images/rit.png" class="w3-left w3-circle w3-margin-right "  style="width:60px;height:60px;" >
+ </div>
+ <div class="col-sm-4"><h2>TECH-D</h2></div>
+    <div class="w3-container">
+      <img src="./images/shubha.jpg"  class="w3-center w3-circle w3-margin-right" style="width:150px" >
+      <hr>
+      <div  align="center">
+      <p><span class="glyphicon glyphicon-envelope"></span>subhashinin14101997[at]gmail[dot]com</p>
+      
+    </div>
+</div>
+  </div>
+</div><br>
+
+
+</body>
+<footer>
+  <div class="col-md-4">
+    <a href="http://fsmk.org"><p><span class="glyphicon glyphicon-globe"></span>fsmk.org</p></a>
+  </div>
+<div class= "col-md-4" align="center">
+<a href="https://facebook.com/fsmkcamp/" class="btn btn-sm btn-social-icon btn-facebook " ><span class="fa fa-facebook"></span></a>
+<a href="http://twitter.com/fsmk_org" class="btn btn-sm btn-social-icon btn-twitter"><span class="fa fa-twitter"></span></a>
+<a href="http://github.com/fsmk" class="btn btn-sm btn-social-icon btn-github"><span class="fa fa-github"></span></a>
+</div>
+<div class="col-md-4" align="right" >
+  <p>Free Software Movement Karnataka</p>
+</div>
+<br>
+<div class="col-md-12" align="right" style=" ">
+<a href="http://gechassan.ac.in"><p style="text-align: right; font-size: 9px;">Designed & Developed by: GECH Linux Users & Enthusiasts(GLUE)</p>
+</div>
+</footer>
+</html>
+
